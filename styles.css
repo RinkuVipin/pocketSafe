@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    background-color: white;
+    color: #2f2f2f;
+    font-family: 'Lora', 'Black Ops One', cursive, 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+body {
+    height: 100vh;
+    color: #555;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/**********************************************
+                TOP PANEL
+**********************************************/
+
+.container-top {
+    background: linear-gradient(rgba(255, 255, 255, .1), rgba(255, 255, 255)), url(img/GTVWQX.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 40%;
+    position: relative;
+    min-height: 260px;
+}
+
+.container-top-details {
+    position: absolute;
+    width: 350px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.container-top-title {
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 0px;
+    font-weight: 300;
+    color: black;
+}
+
+.container-top-amount {
+    font-weight: 300;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    color: black;
+}
+
+.container-top-income,
+.container-top-expense {
+    padding: 8px;
+    text-transform: uppercase;
+}
+
+.container-top-income div,
+.container-top-expense div {
+    display: inline-block;
+}
+
+.container-right {
+    float: right;
+}
+
+.container-top-income {
+    background-color: #28B9B5;
+    margin-bottom: 10px;
+}
+
+.container-top-expense {
+    background-color: #FF5049;
+}
+
+.container-top-text {
+    float: left;
+    font-size: 16px;
+    color: #444;
+    margin-top: 2px;
+}
+
+.container-top-totalincome,
+.container-top-totalexpense {
+    letter-spacing: 1px;
+    float: left;
+}
+
+.container-top-percentage {
+    float: left;
+    width: 44px;
+    font-size: 15px;
+    padding: 3px 2px;
+    margin-left: 10px;
+}
+
+.expense-percent {
+    background-color: rgba(255, 255, 255, 0.2);
+    text-align: center;
+    border-radius: 3px;
+}
+
+
+/**********************************************
+                BOTTOM PANEL
+**********************************************/
+
+.container-bottom {}
+
+
+/*****************ADD PANEL***********************/
+
+.container-add {
+    padding: 14px;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.container-add-details {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.add-description,
+.add-amount {
+    border: 1px solid #e7e7e7;
+    padding: 12px 15px;
+    margin-right: 10px;
+    border-radius: 5px;
+    transition: border 0.3s;
+}
+
+.add-description {
+    width: 400px
+}
+
+.add-amount {
+    width: 160px
+}
+
+.add-option {
+    font-size: 30px;
+    vertical-align: middle;
+    border: 1px solid #e7e7e7;
+    line-height: 1.1;
+    margin-left: 10px;
+    margin-right: 8px;
+    color: seagreen;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.add-description:focus,
+.add-amount:focus,
+.add-option:focus {
+    outline: none;
+    border: 1px solid forestgreen;
+}
+
+.add-btn {
+    font-size: 35px;
+    color: seagreen;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.1;
+    margin-left: 10px;
+    background: none;
+    border: none;
+}
+
+.add-btn:focus {
+    outline: none;
+}
+
+.add-btn:active {
+    transform: translateY(2px);
+}
+
+.red-input-focus:focus { border: 1px solid #FF5049 !important; }
+
+.red-color { color: #FF5049 !important; }
+
+/***************** INCOME EXPENSE CHART PANEL *****************/
+
+.container-chart {
+    width: 100%;
+    margin: 30px auto;
+}
+
+
+.container-income {
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.container-expense {
+    margin-right: 10%;
+}
+
+.container-income,
+.container-expense {
+    float: left;
+    width: 35%;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.container-income-title {
+    color: #28B9B5;
+}
+
+.container-expense-title {
+    color: #FF5049;
+}
+
+.item {
+    padding: 10px;
+    font-size: 16px;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.item:first-child {
+    border-top: 1px solid #e7e7e7;
+}
+
+.item:nth-child(even) {
+    background-color: #f7f7f7;
+}
+
+.item-description {
+    float: left;
+    margin-right: 10px;
+}
+
+.item-value {
+    float: left;
+    margin-right: 10px;
+    transition: transform 0.3s;
+}
+
+.item:hover .item-value {
+    transform: translateX(-20px);
+}
+
+.item-percentage {
+    float: left;
+    margin-left: 20px;
+    transition: transform 0.3s;
+    font-size: 12px;
+    background-color: #FFDAD9;
+    padding: 4px;
+    border-radius: 3px;
+    width: 40px;
+    text-align: center;
+}
+
+.item:hover .item-percentage {
+    transform: translateX(-20px);
+}
+
+.item-delete {
+    float: left;
+}
+
+.item-delete-btn {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    margin-left: 10px;
+    display: none;
+}
+
+.item:hover .item-delete-btn {
+    display: block;
+}
+
+.item-delete-btn:focus {
+    outline: none;
+}
+
+.item-delete-btn:active {
+    transform: translateY(2px);
+}
+
+
+.container-income .item-value,
+.container-income .item-delete-btn {
+    color: #28B9B5;
+}
+
+.container-expense .item-value,
+.container-expense .item-percentage,
+.container-expense .item-delete-btn {
+    color: #FF5049;
+}

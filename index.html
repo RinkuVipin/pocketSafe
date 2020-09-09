@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap" rel="stylesheet" type="text/css">
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <link type="text/css" rel="stylesheet" href="styles.css">
+    <title>PocketSafe</title>
+</head>
+
+<body>
+    <div class="container-top">
+        <div class="container-top-details">
+            <h4 class="container-top-title">Available Budget in <span class="top-title-month"></span></h4>
+            <h2 class="container-top-amount">1356</h2>
+            <div class="container-top-income clearfix">
+                <div class="container-top-text">INCOME</div>
+                <div class="container-right">
+                    <div class="container-top-totalincome">23000</div>
+                    <div class="container-top-percentage">&nbsp;</div>
+                </div>
+            </div>
+            <div class="container-top-expense clearfix">
+                <div class="container-top-text">EXPENSE</div>
+                <div class="container-right">
+                    <div class="container-top-totalexpense">5000</div>
+                    <div class="container-top-percentage expense-percent">100%</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-bottom">
+
+        <div class="container-add">
+            <div class="container-add-details">
+                <select class="add-option">
+                    <option value="inc" selected>+</option>
+                    <option value="exp">-</option>
+                </select>
+                <input type="text" class="add-description" placeholder="Add a description">
+                <input type="number" class="add-amount" placeholder="Amount">
+                <button class="add-btn"><i class="ion-ios-checkmark-outline"></i></button>
+            </div>
+        </div>
+
+        <div class="container-chart clearfix">
+            <div class="container-income">
+                <h2 class="container-income-title">Income</h2>
+                <div class="container-income-list">
+
+<!--
+                    <div class="item clearfix" id="income-0">
+                        <div class="item-description">Salary</div>
+                        <div class="container-right clearfix">
+                            <div class="item-value">+ 2,100.00</div>
+                            <div class="item-delete">
+                                <button class="item-delete-btn"><i class="ion-ios-close-outline"></i></button>
+                            </div>
+                        </div>
+                    </div>
+-->
+                    
+                </div>
+            </div>
+            <div class="container-expense">
+                <h2 class="container-expense-title">Expense</h2>
+                <div class="container-expense-list">
+                    
+<!--
+                    <div class="item clearfix" id="expense-0">
+                            <div class="item-description">Apartment rent</div>
+                            <div class="container-right clearfix">
+                                <div class="item-value">- 900.00</div>
+                                <div class="item-percentage">101%</div>
+                                <div class="item-delete">
+                                    <button class="item-delete-btn"><i class="ion-ios-close-outline"></i></button>
+                                </div>
+                            </div>
+                        </div>
+-->
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>
